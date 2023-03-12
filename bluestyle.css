@@ -1,57 +1,156 @@
-Last login: Tue Mar  7 21:28:39 on ttys000
-rahathossain@C02FH22JMD6N ~ % history
-  237  exit
-  238  history
-  239  git init
-  240  git config --local user.email "rahathossain75062@gmail.com"
-  241  git config --local user.name "rahathossain75062"
-  242  git clone https://github.com/rahathossain75062/Foste.git
-  243  cd foste
-  244  ls
-  245  vim contact.html
-  246  cat contact.html
-  247  git add --all
-  248  git comit -m "First change in contact.html"
-  249  git commit -m "First change in contact.html"
-  250  git push origin master
-  251  history
-  252  exit
-rahathossain@C02FH22JMD6N ~ % git version
-git version 2.37.1 (Apple Git-137.1)
-rahathossain@C02FH22JMD6N ~ % git --version
-git version 2.37.1 (Apple Git-137.1)
-rahathossain@C02FH22JMD6N ~ % git config --global user.name "w3schools-test"
-rahathossain@C02FH22JMD6N ~ % git config --global user.email "test@w3schools.com"
-rahathossain@C02FH22JMD6N ~ % git config --local user.email "rahathossain75062@gmail.com"
-rahathossain@C02FH22JMD6N ~ % git config --local user.name "rahathossain75062"        
-rahathossain@C02FH22JMD6N ~ % mkdir myproject007
-rahathossain@C02FH22JMD6N ~ % cd myproject007
-rahathossain@C02FH22JMD6N myproject007 % git init
-Initialized empty Git repository in /Users/rahathossain/myproject007/.git/
-rahathossain@C02FH22JMD6N myproject007 % ls
-rahathossain@C02FH22JMD6N myproject007 % touch context.html
-rahathossain@C02FH22JMD6N myproject007 % vim context.html
-rahathossain@C02FH22JMD6N myproject007 % ls
-context.html
-rahathossain@C02FH22JMD6N myproject007 % git status
+Last login: Sat Mar 11 19:47:13 on ttys000
+rahathossain@C02FH22JMD6N ~ % cd ~/documents                                                             
+rahathossain@C02FH22JMD6N documents % ls
+src_code
+rahathossain@C02FH22JMD6N documents % cd src_code
+rahathossain@C02FH22JMD6N src_code % ls
+Flie01		MyGit		bluestyle.css	context.html	my.html		myproject007
+rahathossain@C02FH22JMD6N src_code % vim File01
+rahathossain@C02FH22JMD6N src_code % cat File01
+This is a very importantfile.
+rahathossain@C02FH22JMD6N src_code % ls
+File01		Flie01		bluestyle.css	context.html	my.html
+rahathossain@C02FH22JMD6N src_code % rm File01
+rahathossain@C02FH22JMD6N src_code % ls
+Flie01		bluestyle.css	context.html	my.html
+rahathossain@C02FH22JMD6N src_code % cat File01
+cat: File01: No such file or directory
+rahathossain@C02FH22JMD6N src_code % rm Flie01
+rahathossain@C02FH22JMD6N src_code % ls
+bluestyle.css	context.html	my.html
+rahathossain@C02FH22JMD6N src_code % vim my.html
+rahathossain@C02FH22JMD6N src_code % vim my.html
+rahathossain@C02FH22JMD6N src_code % cat my.html
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h1&gt;My Second Heading&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;My Second paragraph.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
+rahathossain@C02FH22JMD6N src_code % git init
+Reinitialized existing Git repository in /Users/rahathossain/Documents/src_code/.git/
+rahathossain@C02FH22JMD6N src_code % git config --local user.email "rahathossain75062@gmail.com"
+rahathossain@C02FH22JMD6N src_code % git config --local user.name "rahathossain75062"      
+rahathossain@C02FH22JMD6N src_code % git add --all
+rahathossain@C02FH22JMD6N src_code % git clone https://github.com/rahathossain75062/MyGit.git
+Cloning into 'MyGit'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 1), reused 6 (delta 1), pack-reused 0
+Receiving objects: 100% (6/6), 4.88 KiB | 4.88 MiB/s, done.
+Resolving deltas: 100% (1/1), done.
+rahathossain@C02FH22JMD6N src_code % git add --all
+warning: adding embedded git repository: MyGit
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> MyGit
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached MyGit
+hint: 
+hint: See "git help submodule" for more information.
+rahathossain@C02FH22JMD6N src_code % git status
 On branch main
+Your branch is up to date with 'origin/main'.
 
-No commits yet
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   MyGit
+	deleted:    README.md
+	modified:   my.html
+	deleted:    myproject007
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	context.html
-
-nothing added to commit but untracked files present (use "git add" to track)
-rahathossain@C02FH22JMD6N myproject007 % git add context.html
-rahathossain@C02FH22JMD6N myproject007 % git status          
+rahathossain@C02FH22JMD6N src_code % git commit -m "Chages made to MyGit"
+[main 5710d75] Chages made to MyGit
+ 5 files changed, 4 insertions(+), 112 deletions(-)
+ create mode 100644 .DS_Store
+ create mode 160000 MyGit
+ delete mode 100644 README.md
+ delete mode 160000 myproject007
+rahathossain@C02FH22JMD6N src_code % git status
 On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
 
-No commits yet
+nothing to commit, working tree clean
+rahathossain@C02FH22JMD6N src_code % git push origin
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 730 bytes | 730.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/rahathossain75062/MyGit.git
+   088cbdf..5710d75  main -> main
+rahathossain@C02FH22JMD6N src_code % git push origin main
+Everything up-to-date
+rahathossain@C02FH22JMD6N src_code % ls
+MyGit		bluestyle.css	context.html	my.html
+rahathossain@C02FH22JMD6N src_code % cd MyGit
+rahathossain@C02FH22JMD6N MyGit % ls
+README.md	bluestyle.css	context.html	my.html		myproject007
+rahathossain@C02FH22JMD6N MyGit % rm README.md
+rahathossain@C02FH22JMD6N MyGit % ls
+bluestyle.css	context.html	my.html		myproject007
+rahathossain@C02FH22JMD6N MyGit % rm myproject007
+rm: myproject007: is a directory
+rahathossain@C02FH22JMD6N MyGit % rm -i myproject007/*
+zsh: sure you want to delete all the files in /Users/rahathossain/documents/src_code/MyGit/myproject007 [yn]? y
+zsh: no matches found: myproject007/*
+rahathossain@C02FH22JMD6N MyGit % ls
+bluestyle.css	context.html	my.html		myproject007
+rahathossain@C02FH22JMD6N MyGit % git add --all                                                              
+rahathossain@C02FH22JMD6N MyGit % ls
+bluestyle.css	context.html	my.html		myproject007
+rahathossain@C02FH22JMD6N MyGit % rm -i myproject007/*
+zsh: sure you want to delete all the files in /Users/rahathossain/documents/src_code/MyGit/myproject007 [yn]? y
+zsh: no matches found: myproject007/*
+rahathossain@C02FH22JMD6N MyGit % ls
+bluestyle.css	context.html	my.html		myproject007
+rahathossain@C02FH22JMD6N MyGit % cd myproject007
+rahathossain@C02FH22JMD6N myproject007 % rm -i myproject007/*
+zsh: sure you want to delete all the files in /Users/rahathossain/documents/src_code/MyGit/myproject007/myproject007 [yn]? y
+zsh: no matches found: myproject007/*
+rahathossain@C02FH22JMD6N myproject007 % ls 
+rahathossain@C02FH22JMD6N myproject007 % ls
+rahathossain@C02FH22JMD6N myproject007 % cd MyGit
+cd: no such file or directory: MyGit
+rahathossain@C02FH22JMD6N myproject007 % cd ..
+rahathossain@C02FH22JMD6N MyGit % ls
+bluestyle.css	context.html	my.html		myproject007
+rahathossain@C02FH22JMD6N MyGit % vim bluestyle.css
+
 
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
-	new file:   context.html
+        new file:   context.html
 
 rahathossain@C02FH22JMD6N myproject007 % touch README.md
 rahathossain@C02FH22JMD6N myproject007 % vim README.md
@@ -63,48 +162,18 @@ background-color: lightblue;
 }
 
 h1 {
-color: navy;
+color: navy and blue;
 margin-left: 20px;
 }
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
-~                                                                                                                                                                
--- INSERT --
+~                                                                                                                              
+~                                                                                                                              
+~                                                                                                                              
+~                                                                                                                              
+~                                                                                                                              
+~                                                                                                                              
+~                                                                                                                              
+~                                                                                                                              
+~                                                                                                                              
+~                                                                                                                              
+~                                                                                                                              
+ 
