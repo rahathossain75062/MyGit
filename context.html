@@ -1,0 +1,247 @@
+Last login: Tue Mar  7 21:28:39 on ttys000
+rahathossain@C02FH22JMD6N ~ % history
+  237  exit
+  238  history
+  239  git init
+  240  git config --local user.email "rahathossain75062@gmail.com"
+  241  git config --local user.name "rahathossain75062"
+  242  git clone https://github.com/rahathossain75062/Foste.git
+  243  cd foste
+  244  ls
+  245  vim contact.html
+  246  cat contact.html
+  247  git add --all
+  248  git comit -m "First change in contact.html"
+  249  git commit -m "First change in contact.html"
+  250  git push origin master
+  251  history
+  252  exit
+rahathossain@C02FH22JMD6N ~ % git version
+git version 2.37.1 (Apple Git-137.1)
+rahathossain@C02FH22JMD6N ~ % git --version
+git version 2.37.1 (Apple Git-137.1)
+rahathossain@C02FH22JMD6N ~ % git config --global user.name "w3schools-test"
+rahathossain@C02FH22JMD6N ~ % git config --global user.email "test@w3schools.com"
+rahathossain@C02FH22JMD6N ~ % git config --local user.email "rahathossain75062@gmail.com"
+rahathossain@C02FH22JMD6N ~ % git config --local user.name "rahathossain75062"        
+rahathossain@C02FH22JMD6N ~ % mkdir myproject007
+rahathossain@C02FH22JMD6N ~ % cd myproject007
+rahathossain@C02FH22JMD6N myproject007 % git init
+Initialized empty Git repository in /Users/rahathossain/myproject007/.git/
+rahathossain@C02FH22JMD6N myproject007 % ls
+rahathossain@C02FH22JMD6N myproject007 % touch context.html
+rahathossain@C02FH22JMD6N myproject007 % vim context.html
+rahathossain@C02FH22JMD6N myproject007 % ls
+context.html
+rahathossain@C02FH22JMD6N myproject007 % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	context.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+rahathossain@C02FH22JMD6N myproject007 % git add context.html
+rahathossain@C02FH22JMD6N myproject007 % git status          
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   context.html
+
+rahathossain@C02FH22JMD6N myproject007 % touch README.md
+rahathossain@C02FH22JMD6N myproject007 % vim README.md
+rahathossain@C02FH22JMD6N myproject007 % touch bluestyle.css
+rahathossain@C02FH22JMD6N myproject007 % vim bluestyle.css
+rahathossain@C02FH22JMD6N myproject007 % update context.html
+zsh: command not found: update
+rahathossain@C02FH22JMD6N myproject007 % cd context.html
+cd: not a directory: context.html
+rahathossain@C02FH22JMD6N myproject007 % git update context.html
+git: 'update' is not a git command. See 'git --help'.
+
+The most similar command is
+	update-ref
+rahathossain@C02FH22JMD6N myproject007 % vim context.html
+rahathossain@C02FH22JMD6N myproject007 % git add --all
+rahathossain@C02FH22JMD6N myproject007 % git add -A
+rahathossain@C02FH22JMD6N myproject007 % git commit -m "First commit on myproject007"
+[main (root-commit) 7190fc8] First commit on myproject007
+ 3 files changed, 35 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 bluestyle.css
+ create mode 100644 context.html
+rahathossain@C02FH22JMD6N myproject007 % git status --short
+rahathossain@C02FH22JMD6N myproject007 % git commit -a -m "Updated context.html with a new line"
+On branch main
+nothing to commit, working tree clean
+rahathossain@C02FH22JMD6N myproject007 % git status                                             
+On branch main
+nothing to commit, working tree clean
+rahathossain@C02FH22JMD6N myproject007 % git log
+commit 7190fc81de1fd04f402ab127888a16ee5641df29 (HEAD -> main)
+Author: w3schools-test <test@w3schools.com>
+Date:   Fri Mar 10 17:33:02 2023 -0600
+
+    First commit on myproject007
+rahathossain@C02FH22JMD6N myproject007 % git commit -help
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --signoff         add a Signed-off-by trailer
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+rahathossain@C02FH22JMD6N myproject007 % git help --all
+See 'git help <command>' to read about a specific subcommand
+
+Main Porcelain Commands
+   add                  Add file contents to the index
+   am                   Apply a series of patches from a mailbox
+   archive              Create an archive of files from a named tree
+   bisect               Use binary search to find the commit that introduced a bug
+   branch               List, create, or delete branches
+   bundle               Move objects and refs by archive
+   checkout             Switch branches or restore working tree files
+   cherry-pick          Apply the changes introduced by some existing commits
+   citool               Graphical alternative to git-commit
+   clean                Remove untracked files from the working tree
+   clone                Clone a repository into a new directory
+   commit               Record changes to the repository
+   describe             Give an object a human readable name based on an available ref
+   diff                 Show changes between commits, commit and working tree, etc
+   fetch                Download objects and refs from another repository
+   format-patch         Prepare patches for e-mail submission
+   gc                   Cleanup unnecessary files and optimize the local repository
+   gitk                 The Git repository browser
+   grep                 Print lines matching a pattern
+   gui                  A portable graphical interface to Git
+   init                 Create an empty Git repository or reinitialize an existing one
+   log                  Show commit logs
+   maintenance          Run tasks to optimize Git repository data
+   merge                Join two or more development histories together
+   mv                   Move or rename a file, a directory, or a symlink
+   notes                Add or inspect object notes
+   pull                 Fetch from and integrate with another repository or a local branch
+   push                 Update remote refs along with associated objects
+   range-diff           Compare two commit ranges (e.g. two versions of a branch)
+   rebase               Reapply commits on top of another base tip
+   reset                Reset current HEAD to the specified state
+   restore              Restore working tree files
+   revert               Revert some existing commits
+   rm                   Remove files from the working tree and from the index
+   shortlog             Summarize 'git log' output
+   show                 Show various types of objects
+   sparse-checkout      Reduce your working tree to a subset of tracked files
+   stash                Stash the changes in a dirty working directory away
+   status               Show the working tree status
+   submodule            Initialize, update or inspect submodules
+   switch               Switch branches
+   tag                  Create, list, delete or verify a tag object signed with GPG
+   worktree             Manage multiple working trees
+
+Ancillary Commands / Manipulators
+   config               Get and set repository or global options
+rahathossain@C02FH22JMD6N myproject007 % git branch hi-world-images
+rahathossain@C02FH22JMD6N myproject007 % git checkout hi-world-images
+Switched to branch 'hi-world-images'
+rahathossain@C02FH22JMD6N myproject007 % vim context.html
+
+<html>
+<head>
+<title>Hello World!</title>
+<link rel="stylesheet" href="bluestyle.css">
+</head>
+<body>
+
+<h1>Hello world!</h1>
+<div><img src="img_hello_world.jpg" alt="Hello World from Space"
+style="width:100%;max-width:960px"></div>
+<p>This is the first file in my new Git Repo.</p>
+<p>A new line in our file!</p>
+
+</body>
+</html><html>
+<head>
+<title>Hello World!</title>
+<link rel="stylesheet" href="bluestyle.css">
+</head>
+<body>
+
+<h1>Hello world!</h1>
+<p>This is the first file in my new Git Repo.</p>
+
+</body>
+</html><html>
+<head>
+<title>Hello World!</title>
+</head>
+<body>
+
+<h1>Hello world!</h1>
+<p>This is the first file in my new Git Repo.</p>
+
+</body>
+</html>
+~                                                                                                                                                                
+~                                                                                                                                                                
+~                                                                                                                                                                
+~                                                                                                                                                                
+~                                                                                                                                                                
+~                                                                                                                                                                
+~                                                                                                                                                                
+~                                                                                                                                                                
+~                                                                                                                                                                
+~                                                                                                                                                                
+~                                                                                                                                                                
+~                                                                                                                                                                
+~                                                                                                                                                                
+-- INSERT --
